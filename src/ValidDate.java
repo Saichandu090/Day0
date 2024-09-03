@@ -23,7 +23,7 @@ public class ValidDate
             return false;
         else if(month==2&&date>29)
             return false;
-        else if((year%400==0||year%4==0&&year%100!=0)&&month==2&&date>28)
+        else if(!(year % 400 == 0 || year % 4 == 0 && year % 100 != 0) &&month==2&&date>28)
             return false;
         else
             return true;
